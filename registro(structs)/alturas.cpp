@@ -32,7 +32,7 @@ int main(){
 
     for(int i = 0; i < n; i++){
         double soma = soma + alturas[i].tamanho;
-        double media = soma / 2.00;
+        double media = soma / n;
         double percentual = (double)menores16 / n * 100.0;
     
         cout << fixed << setprecision(2);
