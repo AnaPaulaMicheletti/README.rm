@@ -1,0 +1,40 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Quantos elementos vai ter o vetor? ";
+    cin >> n;
+
+    double vetor[n];
+
+    // leitura do vetor
+    for (int i = 0; i < n; i++) {
+        cin >> vetor[i];
+    }
+
+    // cálculo da média
+    double soma = 0;
+    for (int i = 0; i < n; i++) {
+        soma += vetor[i];
+    }
+
+    double media = soma / n;
+
+    cout << fixed << setprecision(3);
+    cout << "MEDIA DO VETOR = " << media << endl;
+
+    // mostrar valores abaixo da média
+    cout << "ELEMENTOS ABAIXO DA MEDIA:" << endl;
+
+    cout << fixed << setprecision(1);
+    for (int i = 0; i < n; i++) {
+        if (vetor[i] < media) {
+            cout << vetor[i] << endl;
+        }
+    }
+
+    return 0;
+}
