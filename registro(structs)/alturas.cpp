@@ -31,7 +31,8 @@ int main(){
     int  menores16 = 0; 
 
     for(int i = 0; i < n; i++){
-        double media = (alturas[i].idade + alturas[i].idade) / 2.00;
+        double soma = soma + alturas[i].tamanho;
+        double media = soma / 2.00;
         double percentual = (double)menores16 / n * 100.0;
     
         cout << fixed << setprecision(2);
